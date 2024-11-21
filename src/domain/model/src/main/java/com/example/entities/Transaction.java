@@ -1,7 +1,5 @@
 package com.example.entities;
 
-import java.lang.ref.PhantomReference;
-
 public class Transaction {
      private Long id;
      private String type;
@@ -13,9 +11,6 @@ public class Transaction {
             this.type = type;
             this.amount = amount;
             this.accountId = accountId;
-        }
-
-        public Transaction() {
         }
 
     public Long getId() {
@@ -38,9 +33,6 @@ public class Transaction {
         return amount;
     }
 
-    public void setAmount(Double amount) {
-        this.amount = amount;
-    }
 
     public Integer getAccountId() {
         return accountId;

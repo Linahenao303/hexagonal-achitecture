@@ -7,6 +7,5 @@ import reactor.core.publisher.Mono;
 
 public interface ITransactionRepositoryPort {
     Mono<CreateTransactionDTO> save(Transaction transaction);
-    Mono<CreateTransactionDTO> findById(Integer id);
     Flux<CreateTransactionDTO> findByAccountId(Integer accountId);
 }

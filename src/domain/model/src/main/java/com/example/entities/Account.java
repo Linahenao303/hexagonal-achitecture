@@ -13,9 +13,6 @@ public class Account {
         this.userId = userId;
     }
 
-    public Account() {
-    }
-
     public Integer getId() {
         return id;
     }
